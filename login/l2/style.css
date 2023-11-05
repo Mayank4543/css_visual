@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(243, 72, 198), 60%, #9845);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.card {
+    height: 650px;
+    width: 410px;
+    background: #eee;
+    box-shadow: 5px 10px 20px #353434;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.card h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.inputField {
+    margin: 45px 0;
+    height: 40px;
+    width: 300px;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+
+*/ .card form label {
+    position: absolute;
+    left: 0;
+    transform: translateY(-56%);
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.card form input {
+    width: 90%;
+    height: 100%;
+    float: right;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .9);
+
+    padding: 5px 0;
+    background: transparent;
+}
+
+.card form button[type="submit"] {
+    /* align-self: flex-end; */
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, #098dc1, 60%, #f417de);
+    /* background: #333; */
+    font-size: 19px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.card form button[type="submit"]:hover {
+    background: linear-gradient(45deg, rgb(243, 72, 198), 60%, #9845);
+    color: white;
+}
+
+.card form button[type="submit"]:hover>.arrow-sign {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.errorMessage {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.arrow-sign {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 0.5s;
+}
